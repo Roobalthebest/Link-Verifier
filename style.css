@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Active Flexbox pour centrer */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Largeur maximale pour le contenu */
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Place l'input au-dessus du bouton */
+    align-items: center;
+    gap: 15px; /* Espace entre l'input et le bouton */
+    margin-bottom: 20px;
+}
+
+#link-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assure que le padding n'augmente pas la taille totale */
+}
+
+#verify-button {
+    background-color: #28a745; /* Vert pour le bouton */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#verify-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Styles pour le message de résultat */
+.message {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.secure {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.insecure {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
